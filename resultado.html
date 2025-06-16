@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Resultado de Encuesta</title>
+  <link rel="stylesheet" href="/css/styles4.css">
+</head>
+<body>
+  <main class="resultado-main">
+    <h1>Resultado de la encuesta</h1>
+    <div id="resultados"></div>
+    <a href="landingpage.html" class="volver">Volver al inicio</a>
+  </main>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    // Recoge todos los valores de tecnologías (checkboxes)
+    const gastronomiacolombia = params.getAll('gastronomiacolombia');
+    document.getElementById('resultados').innerHTML = `
+      <p><strong>Valoración:</strong> ${params.get('valoracion') || '-'}</p>
+      <p><strong>paginas selecionadas:</strong> ${gastronomiacolombia.length ? gastronomiacolombia.join(', ') : '-'}</p>
+    `;
+  </script>
+</body>
+</html>
