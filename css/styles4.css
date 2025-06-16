@@ -1,0 +1,60 @@
+body{
+background: #CE5937;
+background: -moz-linear-gradient(left, #CE5937 0%, #1C6EA4 50%, #C59237 100%);
+background: -webkit-linear-gradient(left, #CE5937 0%, #1C6EA4 50%, #f8f411 100%);
+background: linear-gradient(to right, #CE5937 0%, #1C6EA4 50%, #C59237 100%);
+}
+ img{
+border: solid black;
+width: 10em
+}
+ h2{
+    flex: 1;
+    background-color: aliceblue;
+    border: solid black;
+    width: 220px;
+    height: 20px;
+    margin:0auto;
+    padding:2em ;
+   }
+
+.contenido-horizontal{
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+gap: 20px;
+padding: 20px;
+ }
+
+
+ #formulario{
+    
+    background-color: violet;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 350px;
+  }
+
+
+   
+ .fin{
+    padding: 30px 10px;
+    font-size: 14px;
+    margin: 0%;
+    background-color:yellow ;
+    color: rgb(71, 41, 240);
+    padding-bottom: 80px;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+   } 
+
+  
+#creada{
+    color:rgb(98, 0, 255);
+    background-color: yellow;
+    text-align: center;
+    font-size: 1em;
+} 
